@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
 import Search from './pages/Search';
 import AlbumId from './pages/AlbumId';
@@ -48,7 +48,7 @@ class App extends React.Component {
     } = this.state;
 
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route
             exact
@@ -68,7 +68,7 @@ class App extends React.Component {
           <Route exact path="/loading" component={ Loading } />
           <Route component={ NotFound } />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
