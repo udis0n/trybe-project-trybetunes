@@ -1,0 +1,153 @@
+.Header {
+  align-items: center;
+  background-color: var(--medium-black-opacity);
+  bottom: 0;
+  display: flex;
+  font-family: Outfit , sans-serif;
+  height: 60px;
+  justify-content: space-around;
+  left: 0;
+  order: 3;
+  position: fixed;
+  right: 0;
+  z-index: 3;
+}
+
+.logo-container {
+  display: none;
+}
+
+.user-name {
+  display: none;
+}
+
+.menu-links-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-link {
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: inherit;
+}
+
+.menu-selected {
+  color: var(--white);
+  transform: scale(1.01);
+}
+
+.menu-link p {
+  font-size: 14px;
+  font-style: inherit;
+}
+
+.menu-icon {
+  color: var(white);
+  font-size: 20px;
+}
+
+@media only screen and ( min-width : 768px ) {
+
+  .desktop {
+    display: flex;
+  }
+
+  .Header {
+    flex-direction: column;
+    background-color: var(--black);
+    order: 0;
+    position: fixed;
+    width: 30%;
+    min-width: 200px;
+    justify-content: inherit;
+    height: 100vh;
+  }
+
+  .icon-logo {
+    font-size: 4em;
+    color: var(--primary);
+  }
+
+  .menu-links-container {
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .menu-link {
+   flex-direction: row;
+   width: 100%;
+   padding: 10px 20px;
+   align-items: center;
+   margin-bottom: 20px;
+   border-radius: 7px;
+  }
+
+  .menu-link:hover {
+    background-color: var(--light-grey);
+  }
+
+  .menu-link {
+    font-size: 1.5em;
+  }
+
+  .menu-icon {
+    margin-right: 10px;
+    font-size: 0.9em;
+  }
+
+  .user-container {
+    border: solid 1px var(--light-grey);
+    padding: 5px 20px;
+    align-self: flex-start;
+    border-radius: 20px;
+    margin-left: 40px;
+  }
+
+  .user-name {
+    display: inherit;
+    color: var(--white);
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .line {
+    width: 85%;
+    height: 1px;
+    background-color: var(--grey);
+    margin: 30px;
+  }
+  
+  .line-bottom {
+    width: 85%;
+    height: 1px;
+    background-color: var(--grey);
+    margin: 45% 0 30px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 40px 20px;
+    align-self: flex-start;
+    display: inherit;
+  }
+
+  .text-logo {
+    margin: 0;
+    color: var(--white);
+    font-size: 2em;
+    margin-left: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+}

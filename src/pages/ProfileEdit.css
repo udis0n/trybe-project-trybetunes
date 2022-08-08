@@ -1,0 +1,128 @@
+.ProfileEdit {
+  align-items: center;
+  background-color: var(--medium-black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  font-family: Outfit , sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.ProfileEdit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProfileEdit h1 {
+  font-size: 1.5em;
+  margin: 30px 0 70px;
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  width: 360px;
+}
+
+.edit-input {
+  background-color: var(--medium-black);
+  border: none;
+  border-bottom: 1px var(--grey) solid;
+  border-bottom-left-radius: 5px;
+  color: var(--white);
+  font-size: 0.9em;
+  padding: 5px 15px;
+  width: 100%;
+}
+
+.edit-input:focus {
+  outline: none;
+}
+
+.save-edit-button {
+  align-self: center;
+  background-color: var(--medium-black);
+  border: 1px var(--white) solid;
+  border-radius: 20px;
+  color: var(--white);
+  margin-top: 20px;
+  padding: 7px 20px;
+  width: 130px;
+}
+
+.save-edit-button:disabled {
+  border: 1px var(--grey) solid;
+  color: var(--grey);
+}
+
+.save-edit-button:enabled:active {
+  background-color: var(--white);
+  color: var(--medium-black);
+  transform: scale(0.95);
+  transition: 500ms;
+}
+
+.edit-loading {
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  top: 40%;
+}
+
+/* Loading from loading.io/css */
+.lds-ring {
+  z-index: 3;
+  display: inline-block;
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+
+.lds-ring div {
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border: 8px solid var(--white);
+  border-color: var(--white) transparent transparent transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  height: 64px;
+  margin: 8px;
+  position: absolute;
+  width: 64px;
+}
+
+.lds-ring div:nth-child( 1 ) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child( 2 ) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child( 3 ) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and ( min-width : 768px ) {
+  
+  .ProfileEdit {
+    justify-content: center;
+    margin-left: 30%;
+    width: 100%;
+  }
+}

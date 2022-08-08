@@ -1,0 +1,59 @@
+.space-div {
+  height: 100px;
+  background-color: var(--medium-black);
+}
+
+.AlbumId {
+  background-color: var(--medium-black);
+  color: var(--white);
+  min-height: 100vh;
+  position: relative;
+}
+
+.AlbumId .album-name {
+  font-size: 1.5em;
+}
+
+.AlbumId .artist-name {
+  font-size: 0.9em;
+}
+
+.album-info {
+  background: linear-gradient(hsl(225, 4%, 18%, 1), hsla(225, 4%, 18%, 0));
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.album-image-container {
+  align-self: center;
+  box-shadow: 0 7px 19px -1px var(--black);
+  margin: 20px 0 40px;
+  width: 200px;
+}
+
+.AlbumId .album-image {
+  width: 200px;
+}
+
+.music-card-container {
+  padding: 20px;
+}
+
+@media only screen and ( min-width : 768px ) {
+  
+  .AlbumId {
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    width: 100%;
+  }
+
+  .album-info {
+    align-items: center;
+  }
+
+  .AlbumId .artist-name {
+    text-align: center;
+  }
+}

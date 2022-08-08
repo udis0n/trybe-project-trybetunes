@@ -1,0 +1,117 @@
+.MusicCard {
+  border-radius: 7px;
+  color: var(--white);
+  display: flex;
+  font-family: Outfit , sans-serif;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.MusicCard:hover {
+  background-color: var(--dark-grey);
+}
+
+.playing-parent {
+  background-color: var(--dark-grey);
+}
+
+.track-id-container {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 45px;
+}
+
+.track-id {
+  font-size: 1em;
+  margin: 0;
+}
+
+.play-button-album {
+  background-color: var(--dark-grey);
+  border: none;
+  color: var(--primary);
+  display: none;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.MusicCard:hover .track-id {
+  display: none;
+}
+
+.MusicCard:hover .play-button-album {
+  display: inherit;
+}
+
+.track-name-container {
+  height: 50px;
+  padding-left: 20px;
+  width: 350px;
+}
+
+.track-name {
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 280px;
+}
+
+.playing-parent .track-name {
+  color: var(--primary);
+}
+
+.track-artist-name {
+  color: var(--light-grey);
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.heart-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+}
+
+.check-heart {
+  left: -100vw;
+  position: absolute;
+}
+
+.heart-label {
+  align-self: center;
+  color: #aab8c2;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: color 0.2s ease-in-out;
+}
+
+.heart-label:hover {
+  color: var(--light-primary);
+}
+
+.heart-label::selection {
+  background: transparent;
+  color: none;
+}
+
+.check-heart:checked + .heart-label {
+  color: var(--primary);
+}
+
+@media only screen and ( min-width : 768px ) {
+
+  .MusicCard {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .track-name-container {
+    width: 500px;
+    min-width: 300px;
+  }
+}

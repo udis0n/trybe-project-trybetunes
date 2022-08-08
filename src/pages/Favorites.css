@@ -1,0 +1,40 @@
+.FavoriteCard {
+  position: relative;
+  background-color: var(--medium-black);
+  margin: 20px 20px 0;
+  padding: 10px;
+}
+
+.FavoriteCard .track-name-container {
+  width: 270px;
+}
+
+.FavoriteCard .album-image {
+  margin-left: 10px;
+  width: 50px;
+}
+
+.FavoriteCard img {
+  width: 50px;
+} 
+
+.FavoriteCard .track-name {
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
+}
+
+@media only screen and ( min-width : 768px ) {
+  .FavoriteCard {
+      width: 90%;
+      justify-content: center;
+  }
+
+  .FavoriteCard .track-name-container {
+    width: 500px;
+    min-width: 300px;
+  }
+}

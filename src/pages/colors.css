@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&display=swap') ;
+
+:root {
+
+  --black: rgb(8, 8, 8);
+
+  --dark-grey: hsl(225, 4%, 18%);
+
+  --disabled-grey: hsl(205, 16%, 71%);
+
+  --grey: hsl(0, 0%, 47%);
+
+  --light-black: hsl(0, 0%, 9%);
+  
+  --light-grey: hsl(140, 4%, 84%);
+  
+  --light-primary: hsl(29, 71%, 66%);
+  
+  --medium-black: hsl(0, 0%, 7%);
+  
+  --medium-black-opacity: hsl(0, 0%, 7%, 0.8);
+  
+  --primary: hsl(29, 97%, 45%);
+  
+  --white: whitesmoke;
+
+}
+
+body {
+  font-family: Outfit , sans-serif;
+  background-color: var(--medium-black);
+  min-height: 100vh;
+}
